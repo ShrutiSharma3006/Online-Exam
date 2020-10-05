@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			arr=[]
+			function demo()
+			{
+				f=document.getElementById("x").value
+				arr.push(f);
+				document.getElementById("y").innerHTML=arr
+				document.getElementById("z").innerHTML="max:"+Math.max.apply(Math,arr)
+				document.getElementById("t").innerHTML="min:"+Math.min.apply(Math,arr)
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="x">
+		<input type="submit" value="push" onclick="demo()">
+		<div id="y"></div>
+		<div id="z"></div>
+		<div id="t"></div>
+		
+		
+	</body>
+</html>
